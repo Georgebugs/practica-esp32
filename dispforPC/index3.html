@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>МЕТРАН-531</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- <div class="datetime"></div> -->
+      <div class="datetime-container">
+        <div class="time"></div>
+        <div class="date"></div>
+      </div>
+
+      <div class="title">МЕТРАН-531</div>
+      <div class="menu">
+        <div class="main-work-instr">
+          <a href="#" class="main-work-instr-str">M</a>
+          <a href="#" class="main-work-instr-num1">1</a>
+          <a href="#" class="main-work-instr-num2">2</a>
+          <a href="#" class="main-work-instr-num3">3</a>
+          <a href="#" class="main-work-instr-num4">4</a>
+        </div>
+
+        <!-- <span>М123</span><span class="active">4</span> -->
+        <a class="lock-icon" href="#" style="color: #fff"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+            />
+          </svg>
+        </a>
+
+        <!-- <img src="lock-icon.png" alt="lock" class="lock" /> -->
+      </div>
+    </div>
+
+    <div class="main">
+      <!--  -->
+      <div class="global">
+        <!--  -->
+
+        <div class="display">
+          <!------------ -->
+
+          <div class="display-main">
+            <!-- --------------  -->
+            <div class="params">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>
+                      Предел <br />
+                      погр. (Δ):
+                    </th>
+                    <td>±0,01</td>
+                    <td>бар</td>
+                  </tr>
+                  <tr>
+                    <th>Атм. давл.:</th>
+                    <td>96,801</td>
+                    <td>кПа</td>
+                  </tr>
+                  <tr>
+                    <th>Диапазон:</th>
+                    <td>-1 ... 100</td>
+                    <td>Авто</td>
+                  </tr>
+                  <tr>
+                    <th>Тип давл.:</th>
+                    <td>Изб.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="ustavka">
+              <table class="mini-block">
+                <tbody>
+                  <tr>
+                    <th>Уставка:</th>
+                    <td>100</td>
+                    <td>кПа</td>
+                    <td><a class="first-line dop1"></a></td>
+                    <!-- <td>кПа</td> -->
+                  </tr>
+                  <tr>
+                    <th>Время:</th>
+                    <td>900</td>
+                    <td>мин.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- <div><strong>Уставка:</strong> 100 кПа 🔶</div>
+                <div><strong>Время:</strong> 900 мин.</div> -->
+            </div>
+            <!-- -------------------  -->
+          </div>
+          <div class="pressure-value">
+            <div class="pressure">96,027 <span>кПа</span></div>
+            <div class="bar-indicator">
+              <div class="bar"><div class="fill"></div></div>
+              <div class="goriz-ctik">
+                <a>|</a><a>|</a><a>|</a><a>|</a><a>|</a>
+              </div>
+              <div class="gradation">
+                <span>-2Δ</span><span>-1Δ</span><span>0</span><span>1Δ</span
+                ><span>2Δ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- -------------------  -->
+        </div>
+
+        <div class="left-buttons">
+          <button class="blue ghj">&gt; 0 &lt;</button>
+          <div class="btn-row-to">
+            <button class="blue-to">Избыт.</button>
+            <button class="blue-to">бар</button>
+            <button class="blue-to">Авто</button>
+          </div>
+          <div class="btn-row-to">
+            <button class="blue-to">Задание</button>
+            <button class="blue-to">Измерение</button>
+            <button class="red-to">Стоп</button>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+      <!--  -->
+
+      <div class="keypad">
+        <div>
+          <div class="btn-row">
+            <button class="blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                />
+              </svg>
+            </button>
+            <button class="blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+                fill="#fff"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M219.31,72,184,36.69A15.86,15.86,0,0,0,172.69,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V83.31A15.86,15.86,0,0,0,219.31,72ZM168,208H88V152h80Zm40,0H184V152a16,16,0,0,0-16-16H88a16,16,0,0,0-16,16v56H48V48H172.69L208,83.31ZM160,72a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h56A8,8,0,0,1,160,72Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <button>1</button><button>2</button><button>3</button>
+        </div>
+        <div class="row">
+          <button>4</button><button>5</button><button>6</button>
+        </div>
+        <div class="row">
+          <button>7</button><button>8</button><button>9</button>
+        </div>
+        <div class="row">
+          <button>+/-</button><button>0</button><button>.</button>
+        </div>
+        <div class="row">
+          <button>✔</button><button>⌫</button><button>✖</button>
+        </div>
+        <button class="reset">Сброс</button>
+      </div>
+    </div>
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+
+        // Форматирование времени (часы:минуты)
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const timeString = `${hours}:${minutes}`;
+
+        // Форматирование даты (день.месяц.год)
+        const day = String(now.getDate()).padStart(2, "0");
+        const month = String(now.getMonth() + 1).padStart(2, "0");
+        const year = now.getFullYear();
+        const dateString = `${day}.${month}.${year}`;
+
+        // Обновляем элементы
+        document.querySelector(".time").textContent = timeString;
+        document.querySelector(".date").textContent = dateString;
+      }
+
+      // Обновляем сразу при загрузке
+      updateDateTime();
+
+      // Обновляем каждую минуту
+      setInterval(updateDateTime, 60000);
+    </script>
+  </body>
+</html>
