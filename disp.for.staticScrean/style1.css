@@ -1,0 +1,390 @@
+/* 
+----------SITE = Results
+
+--- 01 TYPOGRAPHY SYSTEM
+
+    --FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    --SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+    --Font weights:
+    Deafault : 400,500,600,700  
+        
+
+    --line heights:
+        Deafault : 1
+        medium: 1.2
+        Small: 1.05
+        Paragraph default: 1.6
+    
+    -- Letter spacing
+    -0.5px
+    0.75
+--- 02 COLORS: 
+
+ - Primary: 
+ - Tints:
+
+
+ - Shades: 
+ - Accents: 
+ - Greys
+#555
+#333
+
+
+---05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+Defualt: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+-SPACING SYSTEM (px) (Margin padding etc )
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 800px;
+  height: 480px;
+
+  font-family: "Inter", sans-serif;
+  background: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  align-items: center;
+  background: #005da7;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.title {
+  margin-left: -25%;
+  font-weight: bold;
+
+  font-size: 24px;
+}
+.menu {
+  display: flex;
+}
+.menu span.active {
+  color: red;
+  font-weight: bold;
+}
+.main-work-instr {
+  display: flex;
+  gap: 10px;
+}
+.main-work-instr-str {
+  text-decoration: none;
+  color: #fff;
+}
+.main-work-instr-num1 {
+  color: #fff;
+  text-decoration: none;
+}
+.main-work-instr-num2 {
+  text-decoration: none;
+  color: #fff;
+}
+.main-work-instr-num3 {
+  text-decoration: none;
+  color: #fff;
+}
+.main-work-instr-num4 {
+  text-decoration: none;
+  color: #fff;
+}
+.lock-icon {
+  width: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+.global {
+  /* display: flex;
+  flex-direction: column; */
+}
+.main {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 10px;
+  gap: 20px;
+}
+.datetime {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  display: inline-block;
+  justify-content: left;
+  width: 100px;
+}
+.datetime-container {
+  display: flex;
+  flex-direction: column;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.time {
+  color: #fff;
+}
+
+.date {
+  color: #fff;
+}
+
+.display {
+  /* display: flex; */
+  flex: 1;
+  width: 500px;
+  background: white;
+  margin-top: 5px;
+  border-radius: 8px;
+  /* padding: 10px; */
+  padding: 5px;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 3%;
+}
+.display-main {
+  display: flex;
+
+  width: 500px;
+  /* margin-bottom: 5%; */
+  /* margin-left: 5%; */
+}
+
+.params {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pressure-value {
+  text-align: center;
+}
+
+.pressure {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.pressure span {
+  font-size: 24px;
+}
+
+.bar-indicator {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.gradation {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+.bar {
+  height: 10px;
+  background: lightgray;
+  position: relative;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.fill {
+  width: 90%;
+  background: deepskyblue;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.goriz-ctik {
+  display: flex;
+  width: 500px;
+  position: absolute;
+  margin-top: -13px;
+  justify-content: space-around;
+}
+
+.ustavka {
+  margin-top: 10px;
+}
+
+.left-buttons {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 5px;
+  width: 300px;
+}
+.btn-row-to {
+  /* width: 700px; */
+}
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.blue {
+  background: #0082cb;
+  color: white;
+  width: 100px;
+}
+.blue-to {
+  background: #0082cb;
+  color: white;
+  width: 160px;
+  margin-right: 4px;
+}
+
+.red {
+  background: crimson;
+  color: white;
+  width: 100px;
+}
+.red-to {
+  background: crimson;
+  color: white;
+  width: 160px;
+  margin-right: 4px;
+}
+.ghj {
+  width: 80px;
+}
+
+.keypad {
+  display: grid;
+  margin-top: 5px;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 300px;
+  margin-right: 5%;
+}
+
+.keypad .row {
+  display: flex;
+  gap: 5px;
+}
+
+.keypad button,
+.reset {
+  background: #0082cb;
+  color: white;
+  flex: 1;
+}
+@media (max-width: 699px) {
+  .main-text-2 {
+    font-size: 20px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .main {
+    display: block;
+  }
+  .search-box1 {
+    /* width: 450rem; */
+  }
+  .point1 {
+    margin-bottom: 10px;
+  }
+  /* ------------- */
+  .search-btn1 {
+    font-size: 10px;
+  }
+}
+/* ---------- */
+table {
+  width: 300px;
+  /* margin-top: 100px; */
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+td,
+th {
+  padding: 6px 8px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+thead th {
+  width: 25%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+  /* odd не четные 
+        even четные */
+}
+tbody tr:nth-child(even) {
+  background-color: #fff;
+  /* odd не четные 
+        even четные */
+}
+.mini-block {
+  width: 100px;
+}
+.first-line {
+  display: inline-block;
+  /* height: 20px; */
+  /* width: 400px; */
+  height: 10px;
+  width: 10px;
+  background-color: #f1e05a;
+  /* border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px; */
+  /* #e34c26 */
+  /* #563d7c */
+  /* #c6538c */
+}
+.dop1 {
+  max-height: 10px;
+  max-width: 10px;
+  border-radius: 40px;
+  /* margin-left: 50px; */
+  /* margin-right: 20px; */
+}
