@@ -1,0 +1,153 @@
+body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+}
+.metr {
+  display: flex;
+  width: 30%;
+  height: auto;
+
+  opacity: 0;
+  transform: scale(0.8);
+  /* animation: fade-in 1.2s ease-out forwards, underline-grow 2s 1.2s forwards; */
+  animation: fade-in 3s ease-out forwards, 0s forwards;
+  /* Подчеркивание */
+  /* background: linear-gradient(to right, transparent, transparent), */
+    linear-gradient(to right, #3b556a, #3b556a);
+  background-size: 0 3px, 100% 3px;
+  background-position: 0 100%, 0 100%;
+  /* background-position: 100% 0, 100% 100%; */
+  background-repeat: no-repeat;
+  padding-bottom: 2px;
+
+  /* width: 30%;
+  height: 15%;
+
+  Подчеркивание: стартовая позиция
+  background: linear-gradient(to right, transparent, transparent),
+    linear-gradient(to right, #3b556a, #3b556a);
+  background-size: 0 3px, 100% 3px; 
+  background-position: 0 100%, 0 100%;
+  background-repeat: no-repeat;
+
+  animation: move-to-right 2s forwards, underline-grow 2s 2s forwards;
+  underline-grow стартует через 2s, после движения
+  padding-bottom: 2px; */
+}
+.matrix-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* z-index: 2; Ensure it stays above the rain effect */
+}
+
+.matrix-text {
+  color: #0f0;
+  font-size: 80px;
+  font-family: monospace;
+  position: relative;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+  z-index: 2; /* Ensure it stays above the rain effect */
+}
+
+.matrix-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: glitch 2s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-2px, -2px);
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0;
+}
+/* --------------------------- */
+.rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 0.1) 0,
+    rgba(0, 255, 0, 0.2) 2px,
+    transparent 4px
+  );
+  animation: rain 10s linear infinite;
+  z-index: 1; /* Place it behind the text */
+}
+/* --------------------------- */
+/* Animation for the rain effect */
+@keyframes move-to-right {
+  0% {
+    transform: translateX(-100%);
+    /* rotate: 45deg; */
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Glitch effect for the text */
+
+@keyframes underline-grow {
+  from {
+    background-size: 0% 3px, 100% 3px;
+  }
+  to {
+    background-size: 100% 3px, 0% 3px;
+  }
+}
+/* @keyframes underline-load {
+  from {
+    background-size: 100% 3px, 0 3px;
+  }
+  to {
+    background-size: 0 3px, 100% 3px;
+  }
+} */
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* @keyframes underline-load {
+  0% {
+    background-size: 0% 3px, 100% 3px;
+  }
+  100% {
+    background-size: 100% 3px, 0% 3px;
+  }
+} */
+.first-line {
+    display: inline-block;
+    /* height: 20px; */
+    /* width: 400px; */
+    height: 10px;
+    width: 250px;
+    background-color: #f1e05a;
+    border-top-left-radius: 40px ;
+    border-bottom-left-radius: 40px ;
+}
+.dop1 {
+    max-height: 10px;
+    max-width: 10px;
+    border-radius: 40px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.anser-line1 {
+    background-color: #fff;
+    /* display: flex; */
+    justify-content: center;
+    
+    align-items: center;
+}appwiz.cpl
