@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../Project/esp32_s3_test"
+		},
+		{
+			"name": "250718-155118-espidf-hello-world",
+			"path": "../../250718-155118-espidf-hello-world"
+		},
+		{
+			"name": "esp32S3kireev",
+			"path": "../../esp32S3kireev"
+		},
+		{
+			"name": "arduinokir",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
